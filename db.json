@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "lead@example.com",
+      "password": "lead123",
+      "name": "Teamlead Valera",
+      "role": "lead",
+      "avatarColor": "#33FFF0"
+    },
+    {
+      "id": "2",
+      "email": "member@example.com",
+      "password": "member123",
+      "name": "Member Ivan",
+      "role": "member",
+      "avatarColor": "#33FF57"
+    },
+    {
+      "id": "w849pzn9vm8",
+      "name": "Vlad Denisenko",
+      "email": "example@example.com",
+      "password": "example",
+      "role": "member",
+      "avatarColor": "#33FFF0"
+    },
+    {
+      "id": "SoX-zFeP01g",
+      "name": "Oleg",
+      "email": "email@email.com",
+      "password": "asdasdasdasd",
+      "role": "member",
+      "bgcolor": "#5695c9",
+      "avatarColor": "#A833FF"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Install React Router",
+      "status": "in-progress",
+      "assigneeId": "2",
+      "assigneeName": "Member Alex",
+      "dueDate": "2026-12-31",
+      "description": "Налаштування",
+      "priority": "normal",
+      "comments": []
+    },
+    {
+      "id": "RRpihV1CAjc",
+      "title": "New Task",
+      "description": "Make a new task\n",
+      "assigneeId": "w849pzn9vm8",
+      "assigneeName": "Vlad Denisenko",
+      "priority": "normal",
+      "status": "todo",
+      "dueDate": "2027-03-12",
+      "createdAt": "2026-10-10T23:01:58.389Z",
+      "createdBy": "1",
+      "comments": []
+    },
+    {
+      "id": "r9RqRIdQMRs",
+      "title": "Overdued Task",
+      "description": "New overdued task",
+      "assigneeId": "w849pzn9vm8",
+      "assigneeName": "Vlad Denisenko",
+      "priority": "normal",
+      "dueDate": "2026-09-12",
+      "status": "todo",
+      "createdAt": "2026-10-12T15:38:26.478Z",
+      "createdBy": "1",
+      "comments": []
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

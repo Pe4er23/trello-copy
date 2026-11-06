@@ -1,0 +1,31 @@
+export const Loading = ({size}) => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <svg
+        className="loading-spinner"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="9"
+          stroke="#e4e7e9"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeDasharray="25 100"
+          transform="rotate(-40 12 12)"
+        />
+      </svg>
+    </div>
+  );
+};
