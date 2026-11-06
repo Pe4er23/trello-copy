@@ -1,9 +1,45 @@
-# Instruction
+# Task Management Board (Trello / Jira Clone)
 
-Чтобы начать работу с проектом, нужно запустить БД. Файл запуска "start DB.bat", вся инструкция в нём. (просто напишите start в консоли в файле "start DB.bat")
+![Project Preview](./gif/lead-demo.gif.gif)
+![Project Preview](./gif/member-demo.gif.gif)
 
-# Коментарии
+A fully functional project management web application inspired by Trello and Jira. This project focuses on complex UI interactions, global state management, and user role constraints. 
 
-Я исправил страницу SettingsPage. Теперь цвет бэкграунда меняется при нажатии на цвета. Забыл изменить логику в Avatar.jsx. Теперь в этом компоненте есть новый параметр customColor, который будет менять цвет динамично на странице.
+## ✨ Key Features
 
-На оригинальном Trello, при нажатии на карточку, отображается её описание, но я попробовал сделать тоже самое в своём проекте, то открывается модалка, при нажатии на аватарку пользователя, которму принадлежит задача
+- **Interactive Kanban Board:** Seamless drag-and-drop functionality for moving tasks between different columns and statuses.
+- **State Persistence:** Efficient global state management and data propagation utilizing the React Context API.
+- **Role-Based Access Control (RBAC):** Built-in 'Teamlead' access level for managing permissions and assigning tasks.
+- **Dynamic User Interface:** Auto-generated initialed user avatars and responsive UI elements.
+
+## 🛠 Tech Stack
+
+- **Framework:** React (Functional Components, Hooks)
+- **State Management:** Context API
+- **Interactions:** Drag-and-Drop integration
+
+## 🚀 Quick Start Guide
+
+To test this project locally, follow these instructions:
+
+### 1. Clone the repository
+```bash
+git clone [https://github.com/Pe4er23/trello-copy.git](https://github.com/Pe4er23/trello-copy.git)
+cd trello-copy
+```
+### 2. Install dependencies
+```bash
+npm install
+```
+### 3. Start the development server
+```bash
+npm run dev
+```
+or run a **"start React.bat"** file and type **start**
+
+### 4. Start the database
+Open another console in this folder and type
+``` bash
+npx json-server db.json watch --port 3001
+```
+or run a **"start DB.bat"** file and type **start**
