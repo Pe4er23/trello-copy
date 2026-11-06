@@ -85,9 +85,9 @@ export const SettingsPage = () => {
           boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
         }}
       >
-        {/* Блок с именем и превью аватарки */}
+        {/* Name and avatar preview block */}
         <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-          {/* Превью аватарки сразу реагирует на ввод имени и выбор цвета */}
+          {/* The avatar preview updates immediately when the name or color changes */}
           <Avatar
             user={currentUser}
             size={80}
@@ -118,7 +118,7 @@ export const SettingsPage = () => {
           </div>
         </div>
 
-        {/* Блок выбора цвета */}
+        {/* Color selection block */}
         <div>
           <label
             style={{
@@ -169,7 +169,7 @@ export const SettingsPage = () => {
           </button>
         </div>
 
-        {/* Кнопка сохранения */}
+        {/* Save button */}
         <div
           style={{
             marginTop: "10px",

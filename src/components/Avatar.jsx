@@ -25,9 +25,7 @@ const getColorByName = (name) => {
   return COLORS[Math.abs(hash) % COLORS.length];
 };
 
-// ДОБАВЛЕН ПРОП customColor
 export const Avatar = ({ user, size = 40, customColor = null }) => {
-  // console.log(user);
   const initial = user.name ? user.name.charAt(0).toUpperCase() : "?";
   const bgColor = customColor || user.avatarColor || getColorByName(user.name);
   const textColor = getContrastTextColor(bgColor);

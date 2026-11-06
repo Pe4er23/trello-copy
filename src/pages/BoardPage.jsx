@@ -44,7 +44,7 @@ export const BoardPage = () => {
     };
   };
 
-  // === DRAG AND DROP ЛОГІКА ===
+  // === DRAG AND DROP LOGIC ===
   const handleDragStart = (e, task) => {
     if (!task) return;
     e.dataTransfer.setData("taskId", task.id);
@@ -60,7 +60,6 @@ export const BoardPage = () => {
 
     if (!task || task.status === targetColumn) return;
 
-    // Перевірка прав (Вимоги PDF)
     if (currentUser.role === "member") {
       if (String(task.assigneeId) !== String(currentUser.id)) {
         return alert("Ви не можете переміщувати чужі задачі!");
@@ -142,7 +141,7 @@ export const BoardPage = () => {
         <ProfileDropdown />
       </header>
 
-      {/* Контейнер колонок */}
+      {/* Columns container */}
       <div
         style={{
           display: "flex",
@@ -181,12 +180,6 @@ export const BoardPage = () => {
                 return (
                   <div
                     key={task.id}
-                    // Хотел сделать открытие модалки по клику на карточку,
-                    //  но при нажатии на аватарку, открывается модалка :(
-                    // onClick={() => {
-                    //   setTaskToEdit(task);
-                    //   setIsModalOpen(true);
-                    // }}
                     draggable={true}
                     onDragStart={(e) => handleDragStart(e, task)}
                     style={{
@@ -283,7 +276,7 @@ export const BoardPage = () => {
                 );
               })}
 
-            {/* Кнопка "Додати картку" (Тільки для Тімліда і тільки в колонці Todo) */}
+            {/* "Add card" button (Team lead only and only in the Todo column) */}
             {currentUser?.role === "lead" && col === "todo" && (
               <button
                 onClick={() => {

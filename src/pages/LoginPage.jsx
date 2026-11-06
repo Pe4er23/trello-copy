@@ -8,7 +8,7 @@ import { LoadingOnPage } from "../components/LoadingOnPage";
 function randomLoadingTime(){
   const randomValue = new Uint32Array(1);
   window.crypto.getRandomValues(randomValue);
-  return (randomValue[0] % 1001) + 500; // от 500 до 1500 мс
+  return (randomValue[0] % 1001) + 500; // from 500 to 1500 ms
 }
 
 export const LoginPage = () => {
@@ -118,7 +118,7 @@ export const LoginPage = () => {
 
   return (
     <div style={{ display: "flex", height: "100vh", width: "100%" }}>
-      {/* ЛЕВАЯ ЧАСТЬ: Формы логина и регистрации */}
+      {/* LEFT SIDE: Login and registration forms */}
       <div
         style={{
           flex: 1,
@@ -128,7 +128,7 @@ export const LoginPage = () => {
           flexDirection: "column",
         }}
       >
-        {/* Переключатель вкладок */}
+        {/* Tab switcher */}
         <div style={{ display: "flex", gap: "10px", marginBottom: "30px" }}>
           <button
             onClick={() => setTypeForm("login")}
@@ -160,7 +160,7 @@ export const LoginPage = () => {
           </button>
         </div>
 
-        {/* Отрисовываем форму входа, если typeForm === 'login' */}
+        {/* Render the login form if typeForm === 'login' */}
         {typeForm === "login" && (
           <form
             className="login-form"
@@ -193,7 +193,7 @@ export const LoginPage = () => {
           </form>
         )}
 
-        {/* Отрисовываем форму регистрации, если typeForm === 'register' */}
+        {/* Render the registration form if typeForm === 'register' */}
         {typeForm === "register" && (
           <form
             className="register-form"
@@ -258,7 +258,7 @@ export const LoginPage = () => {
         )}
       </div>
 
-      {/* ПРАВАЯ ЧАСТЬ: Боковая панель быстрого входа (видна только при логине) */}
+      {/* RIGHT SIDE: Quick login sidebar (visible only in login mode) */}
       {typeForm === "login" && (
         <div className="quick-login" style={{}}>
           <h3>Швидкий вхід</h3>

@@ -17,7 +17,7 @@ export const ProfileDropdown = () => {
       }
     };
     
-    // Добавляем слушатель только если меню открыто
+    // Add the listener only when the menu is open
     if (isOpen) {
       document.addEventListener('mousedown', handleClickOutside);
     }
@@ -53,7 +53,7 @@ export const ProfileDropdown = () => {
         <Avatar user={currentUser} size={40} />
       </button>
 
-      {/* Само выпадающее меню */}
+      {/* The dropdown menu itself */}
       {isOpen && (
         <div style={{
           position: 'absolute',
@@ -67,7 +67,7 @@ export const ProfileDropdown = () => {
           padding: '10px 0',
           zIndex: 1000
         }}>
-          {/* Шапка профиля */}
+          {/* Profile header */}
           <div style={{ padding: '0 15px 10px', borderBottom: '1px solid #eee', marginBottom: '5px' }}>
             <strong style={{ display: 'block', fontSize: '14px' }}>{currentUser.name}</strong>
             <span style={{ fontSize: '12px', color: 'gray' }}>
@@ -75,7 +75,7 @@ export const ProfileDropdown = () => {
             </span>
           </div>
 
-          {/* Кнопки меню */}
+          {/* Menu buttons */}
           <button 
             onClick={handleSettingsClick}
             style={{ 

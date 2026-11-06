@@ -100,12 +100,12 @@ export const AppProvider = ({ children }) => {
       if (response.ok) {
         const updatedUser = await response.json();
 
-        // Оновлюємо список всіх користувачів
+        // Update the list of all users
         setUsers((prev) =>
           prev.map((u) => (String(u.id) === String(userId) ? updatedUser : u)),
         );
 
-        // Якщо це поточний користувач - оновлюємо і його
+        // If this is the current user, update them too
         if (currentUser && String(currentUser.id) === String(userId)) {
           setCurrentUser(updatedUser);
           localStorage.setItem("board_user", JSON.stringify(updatedUser));

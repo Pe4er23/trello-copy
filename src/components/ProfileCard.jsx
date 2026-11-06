@@ -42,11 +42,10 @@ export const ProfileCard = ( task ) => {
         <Avatar user={user} size={20} />
       </button>
 
-      {/* Само выпадающее меню */}
+      {/* The dropdown menu */}
       {isOpen && (
         <div style={{
           position: 'absolute',
-          // ...calculateCardPosition(),
           top: '30px',
           right: '-30px',
           backgroundColor: 'var(--bg)',
@@ -57,7 +56,7 @@ export const ProfileCard = ( task ) => {
           padding: '10px 0',
           zIndex: 1000
         }}>
-          {/* Шапка профиля */}
+          {/* Profile header */}
           <div style={{ padding: '0 15px', marginBottom: '5px', display: 'flex', gap: '10px', alignItems: 'center' }}>
             <div>
                 <Avatar user={user} />
