@@ -1,8 +1,9 @@
+
 # Task Management Board (Trello / Jira Clone)
 
-![Project Preview](./preview.gif)
+<img width="1080" height="607" alt="lead-demo" src="https://github.com/user-attachments/assets/afd6896c-22c8-4aec-834f-a7fa0cb8a410" />
 
-![Project Preview](./preview.gif)
+<img width="1080" height="607" alt="member-demo" src="https://github.com/user-attachments/assets/d27fa545-03b5-4404-902f-2d00747e32fb" />
 
 A fully functional project management web application inspired by Trello and Jira. This project focuses on complex UI interactions, global state management, and user role constraints. 
 
